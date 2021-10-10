@@ -6,3 +6,4 @@ const randomName = faker.name.findName();
 console.log(randomName);
 
 // Método marcas de carros
+const
