@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-areas: ". . . . conteudo-grid"
+                         ". . . . conteudo-grid" 
+                         ". . . . conteudo-grid"
+                         ". . . . conteudo-grid";
+    grid-template-columns: 20% ; 
+    padding-right: 18%;                    
+}
+
+.conteudo-grid {
+    grid-area: conteudo-grid;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.abaixo-listas {
+    margin:  16px;
+}
+
+p {
+    margin: 14px;
+}
+
+footer {
+    background-color:rgb(143, 174, 188);
+    padding: 15px;
+}

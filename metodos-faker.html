@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo &#x1F604;</title>
+    <script src="https://cdn.jsdelivr.net/gh/marak/Faker.js/dist/faker.min.js" defer></script>
+    <script src="exemplo-faker.js" defer></script>
+    <link rel="stylesheet" href="estilizando.css">
+</head>
+<body>
+    <style>body{background-color: aquamarine};</style>
+    <style>p{font-size: 20px;}</style>
+    
+    <div class="conteudo">
+        <div class="conteudo-grid">
+            <h1>Biblioteca Faker</h1>
+            <hr>
+            <p>Aqui aprenderemos sobre e como utilizar a biblioteca Faker.
+                <br> Primeiro, é necessário importá-la no seu head: &lt;script src="https://cdn.jsdelivr.net/ghmarak/Faker.js/dist/faker.min.js" defer&gt; &lt;/script&gt; <br> É importante ter em mente de que estamos carregando em nosso programa, uma biblioteca de fora, ou seja, estamos importando-a. Por este fato, é necessário garantirmos o seu carregamento, por isso usamos o defer, tanto na hora de importar a biblioteca, quanto na hora de fazer um link para seu arquivo script. (&lt;script src="exemplo-faker.js" <ins>defer</ins> &gt;&lt;/script&gt;).
+                <p>Este "defer" garante o carregamento de algo na página.</p>
+            </p>
+
+            <h2>Alguns métodos</h2>
+            <ul>
+                <li>Endereço</li>
+                <ul>
+                    <li>zipCode</li>
+                    <li>zipCodeByState</li>
+                    <li>city</li>
+                    <li>cityPrefix</li>
+                    <li>citySuffix</li>
+                    <li>streetName</li>
+                    <li>streetAddress</li>
+                    <li>streetSuffix</li>
+                    <li>streetPrefix</li>
+                </ul>
+                <li>Comércio</li>
+                <ul>
+                    <li>color</li>
+                    <li>department</li>
+                    <li>productName</li>
+                    <li>price</li>
+                    <li>productAdjective</li>
+                    <li>productMaterial</li>
+                    <li>product</li>
+                    <li>productDescription</li>
+                </ul>
+                <li>Lorem</li>
+                <ul>
+                    <li>word</li>
+                    <li>words</li>
+                    <li>sentence</li>
+                    <li>slug</li>
+                    <li>sentences</li>
+                    <li>slug</li>
+                    <li>sentences</li>
+                    <li>paragraph</li>
+                    <li>paragraphs</li>
+                    <li>text</li>
+                    <li>lines</li>
+                </ul>
+                <li>Telefone</li>
+                <ul>
+                    <li>phoneNumber</li>
+                    <li>phoneNumberFormat</li>
+                    <li>phoneFormats</li>
+                </ul>
+                <li>Nome</li>
+                <ul>
+                    <li>firstName</li>
+                    <li>lastName</li>
+                    <li>middleName</li>
+                    <li>findName</li>
+                    <li>jobTitle</li>
+                </ul>
+            </ul>
+        
+            <p>Esses são alguns métodos da biblioteca Faker. Mas afinal, o que faz essa biblioteca ?</p>
+            <p>Essa biblioteca gera valores aleatórios de um determinado método. Darei um exemplo de como utilizá-la : <br> Primeiro, criarei uma variável -> const randomName. Logo em seguida, atribuimos à ela a palavra faker, para que sua IDE entenda que está utilizando sua biblioteca. Em seguida, chamamos o método desejado, no nosso caso queremos um dos métodos do name, então chamaremos name.firstName como exemplo. No geral ficaria assim : <code><p><ins> const randomName = faker.name.firstName(); </ins></code></p>
+            <p>Bastaria agora dar um alert(randomName); ou um console.log(randomName); .</p>
+            <p>Por padrão, este código geraria um primeiro nome, só que em inglês. Para mudarmos para nossa linguagem, bastaria acionarmos no <abbr title="JavaScript">JS</abbr> "faker.locale = "pt_BR"". Com isso ele traria nomes brasileiros.</p>
+            <p>Resumidamente, o conteúdo foi esse. Caso queira se aprofundar mais, acesse o link : <a href="http://marak.github.io/faker.js/" target="_blank" rel="external">http://marak.github.io/faker.js/</a>.</p>
+        </div>
+    </div>
+    <footer>2021 | Renan Poletti</footer>
+</body>
+</html>
