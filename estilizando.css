@@ -15,7 +15,7 @@
 
 .conteudo-grid {
     grid-area: conteudo-grid;
-    background-color: white;
+    background-color: rgb(170, 164, 164);
     padding-left: 20px;
 }
 
@@ -28,6 +28,13 @@ p {
 }
 
 footer {
-    background-color:rgb(143, 174, 188);
-    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-image: url(pexels-aleksandar-pasaric-2338113.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
